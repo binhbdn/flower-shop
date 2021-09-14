@@ -1,4 +1,4 @@
-import 'bootstrap';
+import "bootstrap";
 
 // Import just what bootstrap JS we need
 // import Alert from "~bootstrap/js/dist/alert.js";
