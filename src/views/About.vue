@@ -7,6 +7,6 @@
 <script>
 export default {
   name: "About",
-  pageTitle: "Florist | About Page",
+  pageTitle: "Florist | Giới thiệu",
 };
 </script>
