@@ -1,0 +1,183 @@
+/*------------------------------------------------------------------
+[Table of contents]
+
+* Reset
+* Helper
+* Header
+* Footer
+-------------------------------------------------------------------*/
+
+
+/* --- Reset --- */
+
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=WindSong&display=swap');
+
+html,
+body {
+	height: 100%;
+	font-family: "Quicksand", sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	color: #111111;
+	font-weight: 400;
+	font-family: "Libre Baskerville", serif;
+}
+
+h1 {
+	font-size: 70px;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+h4 {
+	font-size: 24px;
+}
+
+h5 {
+	font-size: 18px;
+}
+
+h6 {
+	font-size: 16px;
+}
+
+p {
+	font-size: 16px;
+	font-family: "Quicksand", sans-serif;
+	color: #444444;
+	font-weight: 400;
+	line-height: 27px;
+	margin: 0 0 15px 0;
+}
+
+
+/* --- Header --- */
+.navbar {
+	.navbar-brand {
+		@media (min-width: 400px) {
+			display: flex !important;
+		}
+
+		>img {
+			width: 116px;
+
+			@media (min-width: 992px) {
+				width: 155px;
+			}
+		}
+	}
+
+	@media (min-width: 992px) {
+		.navbar-icons {
+			order: 3;
+		}
+
+	}
+
+	.navbar-collapse {
+		.nav-item {
+			&.nav-item--logo {
+				img {
+					width: 116px;
+				}
+
+				@media (min-width: 400px) {
+					display: none !important;
+				}
+			}
+
+			>.nav-link {
+				padding-top: 8px;
+				padding-bottom: 0;
+			}
+		}
+
+	}
+
+	.container {
+		.nav-link {
+			font-family: "Oswald",
+				sans-serif;
+			font-size: 14px;
+
+			@media (min-width: 992px) {
+				font-size: 16px;
+
+				svg {
+					width: 24px;
+					height: 24px;
+				}
+			}
+
+			font-weight: 500;
+			color: #111111;
+			transition: all,
+			0.3s;
+		}
+
+		.nav-link,
+		.dropdown-item {
+
+			&.router-link-exact-active,
+			&:hover {
+				color: #f45d96;
+			}
+		}
+
+		.nav-link.dropdown-toggle.router-link-active {
+			color: #f45d96;
+		}
+
+		.sign-in-icon {
+			&>svg {
+				color: #3d8bfd;
+				border: 1px solid #3d8bfd;
+			}
+
+			&::after {
+				color: #3d8bfd;
+			}
+		}
+
+		.sign-out-icon {
+			&>svg {
+				color: #6c757d;
+				border: 1px solid #6c757d;
+			}
+
+			&::after {
+				color: #6c757d;
+
+			}
+		}
+
+		.sign-in-icon,
+		.sign-out-icon {
+			&:hover {
+				&>svg {
+					color: #f45d96;
+					border: 1px solid #f45d96;
+				}
+
+				&::after {
+					color: #f45d96;
+				}
+			}
+		}
+	}
+}
