@@ -25,3 +25,7 @@ git commit -m 'deploy#1'
 git push -f git@github.com:binhbdn/flower-shop.git main:gh-pages
 
 cd -
+
+# how to run this file to deploy:
+# chmod +x ./deploy.sh
+# ./deploy.sh
