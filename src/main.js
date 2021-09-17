@@ -25,7 +25,30 @@ import pageTitleMixin from "./mixins/pageTitleMixin";
 Vue.mixin(pageTitleMixin);
 
 import AppLayout from "./components/layouts/AppLayout.vue";
+import BaseLogo from "./components/base/BaseLogo.vue";
+
+import BaseIconSvgTemplate from "./components/base/BaseIconSvgTemplate.vue";
+import BaseIconCart from "./components/base/BaseIconCart.vue";
+import BaseIconCartPlus from "./components/base/BaseIconCartPlus.vue";
+import BaseIconCartMinus from "./components/base/BaseIconCartMinus.vue";
+import BaseIconCartDisable from "./components/base/BaseIconCartDisable.vue";
+import BaseIconCartCheck from "./components/base/BaseIconCartCheck.vue";
+import BaseIconHeart from "./components/base/BaseIconHeart.vue";
+import BaseIconHeartFill from "./components/base/BaseIconHeartFill.vue";
+import BaseIconSearch from "./components/base/BaseIconSearch.vue";
+
 Vue.component("AppLayout", AppLayout);
+Vue.component("BaseLogo", BaseLogo);
+
+Vue.component("BaseIconSvgTemplate", BaseIconSvgTemplate);
+Vue.component("BaseIconCart", BaseIconCart);
+Vue.component("BaseIconCartPlus", BaseIconCartPlus);
+Vue.component("BaseIconCartMinus", BaseIconCartMinus);
+Vue.component("BaseIconCartDisable", BaseIconCartDisable);
+Vue.component("BaseIconCartCheck", BaseIconCartCheck);
+Vue.component("BaseIconHeart", BaseIconHeart);
+Vue.component("BaseIconHeartFill", BaseIconHeartFill);
+Vue.component("BaseIconSearch", BaseIconSearch);
 
 Vue.config.productionTip = false;
 
