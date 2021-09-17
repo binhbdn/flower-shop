@@ -1,18 +1,23 @@
 <template>
-  <div class="home">
+  <main class="home">
+    <TheCarousel />
     <p>For testing Header logic function only</p>
     <button class="btn btn-primary" @click="signInStatusToggle">
       Click to toggle this.$root.$data.isSignedIn
     </button>
     <p>{{ this.$root.$data.isSignedIn }}</p>
-  </div>
+  </main>
 </template>
 
 <script>
+import TheCarousel from "@/components/sections/TheCarousel";
+
 export default {
   name: "Home",
   pageTitle: "Florist | Trang chủ",
-
+  components: {
+    TheCarousel,
+  },
   methods: {
     // For testing Header logic function only
     signInStatusToggle: function () {
