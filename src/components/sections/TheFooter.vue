@@ -67,9 +67,9 @@
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="footer__newslatter">
-              <h4>Newletter</h4>
+              <h4>Tin tức</h4>
               <p>
-                Đăng ký nhận các blog mà chúng tôi chia sẻ các mẹo và thủ thuật
+                Đăng ký nhận các bài viết của chúng tôi về các mẹo và thủ thuật
                 cắm hoa, chăm sóc hoa ...
               </p>
               <form action="#">
@@ -93,7 +93,7 @@
       <div class="footer__copyright">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <p>Copyright ©2021 All rights reserved</p>
+            <p>Copyright ©2021 Florist. All rights reserved</p>
           </div>
         </div>
       </div>
