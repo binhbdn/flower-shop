@@ -56,7 +56,7 @@
       <div class="footer__options">
         <div class="row">
           <div class="col-lg-2 col-md-3">
-            <div class="footer__widget">
+            <div class="footer__widget footer__widget--info">
               <h4>Thông tin</h4>
               <ul>
                 <li>
@@ -72,7 +72,7 @@
             </div>
           </div>
           <div class="col-lg-2 col-md-3">
-            <div class="footer__widget">
+            <div class="footer__widget footer__widget--guide">
               <h4>Hướng dẫn</h4>
               <ul>
                 <li>
@@ -106,9 +106,25 @@
             <div class="footer__widget footer__widget--address">
               <h4>Liên hệ</h4>
               <ul>
-                <li>68, Tôn Thất Thuyết, Cầu Giấy, Hà Nội</li>
-                <li>+84 24 3312 0103</li>
-                <li>info@florist.com</li>
+                <li>
+                  <a
+                    href="https://www.google.com/maps/place/VMODEV/@21.0302135,105.781921,18.25z/data=!4m5!3m4!1s0x313454b354936a69:0xe0059369a89d3969!8m2!3d21.031066!4d105.781948"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <BaseIconLocation /> 68, Tôn Thất Thuyết, Cầu Giấy, Hà Nội
+                  </a>
+                </li>
+                <li>
+                  <a href="tel:+842433120103"
+                    ><BaseIconTelephone /> +84 24 3312 0103</a
+                  >
+                </li>
+                <li>
+                  <a href="mailto:info@florist.com"
+                    ><BaseIconEnvelope /> info@florist.com</a
+                  >
+                </li>
               </ul>
             </div>
           </div>
@@ -130,6 +146,9 @@ import BaseIconFacebook from "@/components/base/BaseIconFacebook";
 import BaseIconTwitter from "@/components/base/BaseIconTwitter";
 import BaseIconInstagram from "@/components/base/BaseIconInstagram";
 import BaseIconLinkedin from "@/components/base/BaseIconLinkedin";
+import BaseIconLocation from "@/components/base/BaseIconLocation";
+import BaseIconTelephone from "@/components/base/BaseIconTelephone";
+import BaseIconEnvelope from "@/components/base/BaseIconEnvelope";
 
 export default {
   name: "TheFooter",
@@ -138,6 +157,9 @@ export default {
     BaseIconTwitter,
     BaseIconInstagram,
     BaseIconLinkedin,
+    BaseIconLocation,
+    BaseIconTelephone,
+    BaseIconEnvelope,
   },
 };
 </script>
