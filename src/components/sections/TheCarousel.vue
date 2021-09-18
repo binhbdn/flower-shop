@@ -22,10 +22,7 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="4000">
-        <div
-          class="bg-img"
-          style="background-image: url('/img/carousel/carousel-1.jpg')"
-        ></div>
+        <div class="bg-img img-carousel-1"></div>
 
         <div class="carousel-caption pb-5">
           <div class="container">
@@ -42,10 +39,7 @@
         </div>
       </div>
       <div class="carousel-item" data-bs-interval="4000">
-        <div
-          class="bg-img"
-          style="background-image: url('/img/carousel/carousel-2.jpg')"
-        ></div>
+        <div class="bg-img img-carousel-2"></div>
 
         <div class="carousel-caption pb-5">
           <div class="container">
