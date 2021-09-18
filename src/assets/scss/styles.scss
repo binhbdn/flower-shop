@@ -5,6 +5,7 @@
 * Helper
 * Header
 * Footer
+* Carousel
 -------------------------------------------------------------------*/
 
 
@@ -28,7 +29,7 @@ h5,
 h6 {
 	margin: 0;
 	color: #111111;
-	font-weight: 400;
+	font-weight: 650;
 }
 
 h1 {
@@ -74,6 +75,10 @@ textarea:focus {
 	outline: none;
 }
 
+a {
+	text-decoration: none;
+}
+
 a:hover,
 a:focus {
 	text-decoration: none;
@@ -85,6 +90,19 @@ ul,
 ol {
 	padding: 0;
 	margin: 0;
+}
+
+/* --- Helper --- */
+.btn-florist {
+	display: inline-block;
+	font-size: 15px;
+	color: #ffffff;
+	font-weight: 700;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	background: #f45d96;
+	padding: 14px 30px 12px;
+	border-radius: 50px;
 }
 
 /* --- Header --- */
@@ -398,5 +416,68 @@ ol {
 
 	.footer__widget.footer__widget--address {
 		padding-left: 20px;
+	}
+}
+
+/* --- Carousel --- */
+.carousel-item {
+	height: 550px;
+	display: flex;
+	align-items: center;
+
+	.bg-img {
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: top center;
+		height: 550px;
+	}
+
+	.carousel-caption {
+		right: 0;
+		left: 0;
+	}
+
+	.carousel__text {
+		span {
+			font-size: 16px;
+			color: #111111;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			display: block;
+			margin-bottom: 12px;
+			position: relative;
+			top: 100px;
+			transition: all, 0.4s;
+			opacity: 0;
+		}
+
+		h2 {
+			color: #111111;
+			font-size: 43px;
+			line-height: 60px;
+			margin-bottom: 28px;
+			position: relative;
+			top: 200px;
+			transition: all, 0.8s;
+			opacity: 0;
+		}
+
+		.btn-florist {
+			position: relative;
+			top: 400px;
+			transition: all, 1.2s;
+			opacity: 0;
+		}
+	}
+
+	&.active .carousel__text {
+
+		span,
+		h2,
+		.btn-florist {
+			top: 0;
+			opacity: 1;
+		}
 	}
 }

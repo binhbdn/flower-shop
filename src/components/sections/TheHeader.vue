@@ -1,8 +1,6 @@
 <template>
   <header class="pt-2 pb-3">
-    <nav
-      class="navbar navbar-expand-lg sticky-lg-top navbar-light border-bottom"
-    >
+    <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
         <button
           class="navbar-toggler"
