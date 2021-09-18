@@ -21,10 +21,34 @@
           </div>
           <div class="col-md-3">
             <div class="footer__top__social">
-              <a href="#"><BaseIconFacebook size="20" /></a>
-              <a href="#"><BaseIconTwitter size="20" /></a>
-              <a href="#"><BaseIconInstagram size="20" /></a>
-              <a href="#"><BaseIconLinkedin size="20" /></a>
+              <a
+                href="#"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="Facebook"
+                ><BaseIconFacebook size="24"
+              /></a>
+              <a
+                href="#"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="Twitter"
+                ><BaseIconTwitter size="24"
+              /></a>
+              <a
+                href="#"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="Instagram"
+                ><BaseIconInstagram size="24"
+              /></a>
+              <a
+                href="#"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="Linkedin"
+                ><BaseIconLinkedin size="24"
+              /></a>
             </div>
           </div>
         </div>
