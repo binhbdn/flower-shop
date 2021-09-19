@@ -1,14 +1,17 @@
 /*------------------------------------------------------------------
 [Table of contents]
-
+GENERAL
 * Reset
 * Helper
 * Header
+* Instagram
 * Footer
+
+HOME PAGE
 * Carousel
 -------------------------------------------------------------------*/
 
-
+/* --- GENERAL --- */
 /* --- Reset --- */
 
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
@@ -103,6 +106,12 @@ ol {
 	background: #f45d96;
 	padding: 14px 30px 12px;
 	border-radius: 50px;
+}
+
+.set-bg {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
 }
 
 /* --- Header --- */
@@ -217,6 +226,77 @@ ol {
 					color: #f45d96;
 				}
 			}
+		}
+	}
+}
+
+/* --- Instagram --- */
+.instagram {
+	padding-top: 10px;
+}
+
+.instagram__post {
+	margin-left: -2px;
+	margin-right: -2px;
+}
+
+.instagram__post__item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	float: left;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 10px;
+
+	width: calc(100% - 10px);
+	height: 372px;
+
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		width: calc(50% - 10px);
+	}
+
+	@media only screen and (min-width: 768px) and (max-width: 991px) {
+		width: calc(33.33% - 10px);
+	}
+
+	@media only screen and (min-width: 992px) {
+		width: calc(20% - 10px);
+		height: 265px;
+	}
+
+
+	&:hover .instagram__post__item__hover {
+		transform: scale(1);
+	}
+}
+
+.instagram__post__item__hover {
+	background: #ffffff;
+	padding: 20px 75px 16px;
+	text-align: center;
+	transition: all, 0.5s;
+	transform: scale(0);
+
+	@media only screen and (min-width: 992px) and (max-width: 1199px) {
+		padding: 20px 25px 16px;
+	}
+
+	@media only screen and (min-width: 1200px) and (max-width: 1449px) {
+		padding: 20px 30px 16px;
+	}
+
+	svg {
+		font-size: 30px;
+		color: #f45d96;
+	}
+
+	h6 {
+		color: #111111;
+		margin-top: 8px;
+
+		a {
+			color: #f45d96;
 		}
 	}
 }
@@ -432,6 +512,7 @@ ol {
 	}
 }
 
+/* --- HOME PAGE --- */
 /* --- Carousel --- */
 .carousel-item {
 	height: 550px;
