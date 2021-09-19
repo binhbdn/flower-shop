@@ -10,6 +10,7 @@ GENERAL
 HOME PAGE
 * Carousel
 * Benefits
+* Categories
 -------------------------------------------------------------------*/
 
 /* --- GENERAL --- */
@@ -107,6 +108,11 @@ ol {
 	background: #f45d96;
 	padding: 14px 30px 12px;
 	border-radius: 50px;
+	box-shadow: 5px 5px 10px 0 rgb(0 0 0 / 50%);
+
+	&:hover {
+		box-shadow: inset 5px 5px 10px 0 rgb(0 0 0 / 50%);
+	}
 }
 
 .set-bg {
@@ -613,8 +619,52 @@ ol {
 .benefits__item__text h4 {
 	color: #111111;
 	margin-bottom: 10px;
+
+	&:hover {
+		color: #f45d96;
+	}
 }
 
 .benefits__item__text p {
 	margin-bottom: 0;
+}
+
+/* --- Categories --- */
+.categories__item {
+	height: 440px;
+	position: relative;
+	margin-bottom: 30px;
+	transition: all 0.3s ease;
+
+	&:hover {
+		box-shadow: 0 0 10px #555;
+		transform: translateY(-10px);
+		a {
+			color: #f45d96;
+		}
+	}
+}
+
+.categories__item__text {
+	background: #ffffff;
+	text-align: center;
+	padding: 15px 0;
+	position: absolute;
+	left: 15px;
+	bottom: 15px;
+	width: calc(100% - 30px);
+}
+
+.categories__item__text h4 a {
+	color: #111111;
+
+	&:hover {
+		font-style: italic;
+	}
+}
+
+.categories__item__text span {
+	font-size: 14px;
+	color: #444444;
+	display: block;
 }
