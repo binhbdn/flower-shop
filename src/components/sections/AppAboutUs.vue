@@ -52,7 +52,7 @@
               auctor au auue neque. Maada fames ac pis egestas maeceas conlis
               posuere. Arcu risus quis vaius qu quis id diam.
             </p>
-            <a href="/lien-he" class="btn-florist">Liên hệ</a>
+            <router-link to="/lien-he" class="btn-florist">Liên hệ</router-link>
           </div>
         </div>
       </div>
