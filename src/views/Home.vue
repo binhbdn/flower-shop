@@ -2,17 +2,17 @@
   <main class="home">
     <TheCarousel />
     <TheBenefits />
-    <p>For testing Header logic function only</p>
+    <TheCategories />
     <button class="btn btn-primary" @click="signInStatusToggle">
       Click to toggle this.$root.$data.isSignedIn
     </button>
-    <p>{{ this.$root.$data.isSignedIn }}</p>
   </main>
 </template>
 
 <script>
 import TheCarousel from "@/components/sections/TheCarousel";
 import TheBenefits from "../components/sections/TheBenefits.vue";
+import TheCategories from "../components/sections/TheCategories.vue";
 
 export default {
   name: "Home",
@@ -20,6 +20,7 @@ export default {
   components: {
     TheCarousel,
     TheBenefits,
+    TheCategories,
   },
   methods: {
     // For testing Header logic function only
