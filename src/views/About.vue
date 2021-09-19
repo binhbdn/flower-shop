@@ -1,12 +1,17 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <AppAboutUs />
   </div>
 </template>
 
 <script>
+import AppAboutUs from "../components/sections/AppAboutUs.vue";
+
 export default {
   name: "About",
   pageTitle: "Florist | Giới thiệu",
+  components: {
+    AppAboutUs,
+  },
 };
 </script>
