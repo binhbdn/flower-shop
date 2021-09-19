@@ -138,6 +138,16 @@
         </div>
       </div>
     </div>
+
+    <button
+      id="back-to-top"
+      class="text-white p-0 border-0 rounded-circle"
+      @click="backToTop"
+      title="Lên đầu trang"
+      type="button"
+    >
+      <BaseIconArrowUp />
+    </button>
   </footer>
 </template>
 
@@ -149,6 +159,7 @@ import BaseIconLinkedin from "@/components/base/BaseIconLinkedin";
 import BaseIconLocation from "@/components/base/BaseIconLocation";
 import BaseIconTelephone from "@/components/base/BaseIconTelephone";
 import BaseIconEnvelope from "@/components/base/BaseIconEnvelope";
+import BaseIconArrowUp from "@/components/base/BaseIconArrowUp";
 
 export default {
   name: "TheFooter",
@@ -160,6 +171,41 @@ export default {
     BaseIconLocation,
     BaseIconTelephone,
     BaseIconEnvelope,
+    BaseIconArrowUp,
+  },
+
+  mounted: function () {
+    this.$nextTick(function () {
+      // Code that will run only after the
+      // entire view has been rendered
+
+      //Get the button:
+      var myButton = document.getElementById("back-to-top");
+
+      // When the user scrolls down 100px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.documentElement.scrollTop > 100 ||
+          document.body.scrollTop > 100
+        ) {
+          myButton.style.display = "block";
+        } else {
+          myButton.style.display = "none";
+        }
+      }
+    });
+  },
+
+  methods: {
+    // When the user clicks on the button, scroll to the top of the document
+    backToTop: function () {
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      document.body.scrollTop = 0; // For Safari
+    },
   },
 };
 </script>
