@@ -9,6 +9,7 @@ GENERAL
 
 HOME PAGE
 * Carousel
+* Benefits
 -------------------------------------------------------------------*/
 
 /* --- GENERAL --- */
@@ -582,4 +583,38 @@ ol {
 			opacity: 1;
 		}
 	}
+}
+
+/* --- Benefits --- */
+.benefits {
+	padding-top: 60px;
+	padding-bottom: 30px;
+}
+
+.benefits__item {
+	margin-bottom: 30px;
+	overflow: hidden;
+	padding-left: 30px;
+
+	@media (min-width: 576px) {
+		padding-left: 0;
+	}
+}
+
+.benefits__item__icon {
+	float: left;
+	margin-right: 20px;
+}
+
+.benefits__item__text {
+	overflow: hidden;
+}
+
+.benefits__item__text h4 {
+	color: #111111;
+	margin-bottom: 10px;
+}
+
+.benefits__item__text p {
+	margin-bottom: 0;
 }
