@@ -31,7 +31,9 @@
                 <div class="carousel__text text-start">
                   <span>Shop hoa tươi &amp; Quà tặng</span>
                   <h2>Đẹp nhẹ nhàng đắm say lòng người.</h2>
-                  <a href="/gioi-thieu" class="btn-florist">Giới thiệu</a>
+                  <router-link to="/gioi-thieu" class="btn-florist"
+                    >Giới thiệu</router-link
+                  >
                 </div>
               </div>
             </div>
@@ -48,7 +50,9 @@
                 <div class="carousel__text text-start">
                   <span>Shop hoa tươi &amp; Quà tặng</span>
                   <h2>Đẹp tinh khôi tặng người yêu mến.</h2>
-                  <a href="/dich-vu" class="btn-florist">Dịch vụ</a>
+                  <router-link to="/dich-vu" class="btn-florist"
+                    >Dịch vụ</router-link
+                  >
                 </div>
               </div>
             </div>
