@@ -1,5 +1,5 @@
 <template>
-  <header class="pt-2 pb-3">
+  <header class="py-2">
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
         <button
@@ -16,7 +16,7 @@
         <a class="navbar-brand mx-auto d-none" href="/">
           <BaseLogo class="mx-auto" />
         </a>
-        <div class="navbar-icons d-flex">
+        <div class="navbar-icons d-flex pt-2">
           <router-link
             to="/san-pham/tim-kiem"
             class="nav-link px-2"
