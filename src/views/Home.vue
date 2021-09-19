@@ -12,7 +12,7 @@
 
 <script>
 import TheCarousel from "@/components/sections/TheCarousel";
-import TheBenefits from '../components/sections/TheBenefits.vue';
+import TheBenefits from "../components/sections/TheBenefits.vue";
 
 export default {
   name: "Home",
