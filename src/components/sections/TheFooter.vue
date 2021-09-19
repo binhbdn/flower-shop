@@ -5,9 +5,9 @@
         <div class="row">
           <div class="col-md-3">
             <div class="footer__logo">
-              <a class="d-inline-block" href="/">
+              <router-link class="d-inline-block" to="/">
                 <BaseLogo />
-              </a>
+              </router-link>
             </div>
           </div>
           <div class="col-md-6">

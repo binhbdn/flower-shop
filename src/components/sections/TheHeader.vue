@@ -13,9 +13,9 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand mx-auto d-none" href="/">
+        <router-link class="navbar-brand mx-auto d-none" to="/">
           <BaseLogo class="mx-auto" />
-        </a>
+        </router-link>
         <div class="navbar-icons d-flex pt-2">
           <router-link
             to="/san-pham/tim-kiem"
