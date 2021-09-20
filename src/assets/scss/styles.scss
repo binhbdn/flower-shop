@@ -794,7 +794,7 @@ ol {
 		top: 0;
 		height: 842px;
 		width: 802px;
-		background-image: url(/img/testimonial/left-bg.png);
+		background-image: url('~@/assets/img/testimonial/left-bg.png');
 		content: "";
 		z-index: -1;
 	}
@@ -806,7 +806,7 @@ ol {
 			bottom: -48px;
 			height: 688px;
 			width: 697px;
-			background-image: url(/img/testimonial/right-bg.png);
+			background-image: url('~@/assets/img/testimonial/right-bg.png');
 			content: "";
 			z-index: -1;
 		}
