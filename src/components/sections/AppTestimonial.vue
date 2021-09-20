@@ -1,6 +1,15 @@
 <template>
   <div id="myTestimonial" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
+      <button
+        v-for="index in 3"
+        :key="index"
+        :data-bs-slide-to="index - 1"
+        :aria-label="'Slide ' + index"
+        :class="{ active: index == 1 }"
+        data-bs-target="#myTestimonial"
+        type="button"
+      ></button>
     </div>
     <div class="carousel-inner">
     </div>
