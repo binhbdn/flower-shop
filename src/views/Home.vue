@@ -5,9 +5,6 @@
     <TheCategories />
     <AppAboutUs />
     <AppTestimonial />
-    <button class="btn btn-primary" @click="signInStatusToggle">
-      Click to toggle this.$root.$data.isSignedIn
-    </button>
   </main>
 </template>
 
@@ -27,15 +24,6 @@ export default {
     TheCategories,
     AppAboutUs,
     AppTestimonial,
-  },
-  methods: {
-    // For testing Header logic function only
-    signInStatusToggle: function () {
-      this.$root.$data.isSignedIn = !this.$root.$data.isSignedIn;
-    },
-  },
-  mounted() {
-    // console.log("this.$root.$data.isSignedIn = " + this.$root.$data.isSignedIn);
   },
 };
 </script>
