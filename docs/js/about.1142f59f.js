@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["about"],{f820:function(t,e,n){"use strict";n.r(e);var a=function(){var t=this,e=t.$createElement,n=t._self._c||e;return n("div",{staticClass:"about"},[n("AppAboutUs"),n("AppTestimonial")],1)},i=[],o=n("f975"),s=n("d946"),p={name:"About",pageTitle:"Florist | Giới thiệu",components:{AppAboutUs:o["a"],AppTestimonial:s["a"]}},u=p,l=n("2877"),c=Object(l["a"])(u,a,i,!1,null,null,null);e["default"]=c.exports}}]);
+//# sourceMappingURL=about.1142f59f.js.map
