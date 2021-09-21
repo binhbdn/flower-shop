@@ -64,31 +64,20 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   name: "AppTestimonial",
   data: function () {
     return {
-      testimonialItems: [
-        {
-          id: 1,
-          name: "Trâm Anh",
-          content:
-            "Cảm ơn các bạn đã đem đến sự bất ngờ về món quà của người ấy cho mình. Mình thật sự hạnh phúc về đóa hoa ấy. Cảm ơn!",
-        },
-        {
-          id: 2,
-          name: "Alain Meilland",
-          content:
-            "Qua các bạn, tuy mình ở nước ngoài nhưng vẫn có thể gửi món quà yêu thương đến người thân ở Việt Nam, Cảm ơn nhiều.",
-        },
-        {
-          id: 3,
-          name: "Ngọc Thạch",
-          content:
-            "Mình rất dịch vụ của các bạn, rất nhanh chóng và đùng giờ, chúc các bạn thành công. Mình sẽ luôn ủng hộ các bạn.",
-        },
-      ],
+      testimonialItems: null,
     };
+  },
+  created: function () {
+    axios
+      .get("https://flower-shop.free.beeceptor.com/testimonial-items")
+      .then((response) => (this.testimonialItems = response.data))
+      .catch((error) => console.log(error));
   },
 };
 </script>
