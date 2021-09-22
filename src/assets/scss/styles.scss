@@ -12,6 +12,7 @@ HOME PAGE
 * Benefits
 * Categories
 * About section
+* Latest Posts Section
 * Testimonial
 -------------------------------------------------------------------*/
 
@@ -114,6 +115,12 @@ ol {
 
 	&:hover {
 		box-shadow: inset 5px 5px 10px 0 rgb(0 0 0 / 50%);
+	}
+
+	&.btn-outline-florist {
+		background: transparent;
+		color: #111111;
+		border: 2px solid #f45d96;
 	}
 }
 
@@ -733,7 +740,8 @@ ol {
 
 .about__text {
 	background: #ffffff;
-	box-shadow: 0px 10px 21px rgba(99, 134, 137, 0.16);
+	// box-shadow: 0px 10px 21px rgba(99, 134, 137, 0.16);
+	box-shadow: 5px 5px 10px 0 rgb(0 0 0 / 50%);
 	padding: 100px 90px 105px 70px;
 	margin-left: -95px;
 	margin-top: -70px;
@@ -776,6 +784,102 @@ ol {
 
 	@media only screen and (max-width: 479px) {
 		padding: 30px 30px 50px 30px;
+	}
+}
+
+/* --- Latest Posts Section --- */
+.latest-post {
+	padding-top: 100px;
+	padding-bottom: 50px;
+}
+
+.latest__btn {
+	margin-bottom: 45px;
+	text-align: left;
+
+	@media (min-width: 768px) {
+		text-align: right;
+	}
+}
+
+.blog__item {
+	// box-shadow: 0px 10px 21px rgba(99, 133, 136, 0.16);
+	box-shadow: 5px 5px 10px 0 rgb(0 0 0 / 50%);
+	margin-bottom: 50px;
+	transition: all 0.3s ease;
+}
+
+.blog__item:hover {
+	// transform: translateY(-10px);
+	transform: scale(1.05);
+	box-shadow: 5px 5px 10px 0 #f45d96;
+
+	.blog__item__text .label span {
+		background: #f45d96;
+	}
+
+	.blog__item__text h4 a {
+		// color:#f45d96;
+		font-style: italic;
+	}
+}
+
+.blog__item__pic img {
+	height: 100%;
+	min-width: 100%;
+}
+
+.blog__item__text {
+	position: relative;
+	padding: 38px 35px 30px;
+}
+
+.blog__item__text .label {
+	position: absolute;
+	left: 0;
+	top: -13px;
+	right: 0;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.blog__item__text .label span {
+	color: #ffffff;
+	background: #111111;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 4px 10px 2px;
+	display: inline-block;
+	transition: all, 0.3s;
+}
+
+.blog__item__text h4 {
+	margin-bottom: 12px;
+}
+
+.blog__item__text h4 a {
+	color: #111111;
+	line-height: 31px;
+}
+
+.blog__item__text p {
+	margin-bottom: 10px;
+	text-align: justify;
+}
+
+.blog__item__text .text-end {
+	font-size: 14px;
+	color: #888888;
+	font-weight: 500;
+	svg {
+		display: inline-block;
+		vertical-align:text-bottom;
+		color:#f45d96;
+		margin-right: 3px;
+
+		&+svg {
+			margin-left: 15px;
+		}
 	}
 }
 
