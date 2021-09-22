@@ -75,7 +75,9 @@ export default {
   },
   created: function () {
     axios
-      .get("https://api.jsonstorage.net/v1/json/ba79d80e-fd4e-4084-a851-2eaa13e0e68a")
+      .get(
+        "https://api.jsonstorage.net/v1/json/ba79d80e-fd4e-4084-a851-2eaa13e0e68a"
+      )
       .then((response) => (this.testimonialItems = response.data))
       .catch((error) => console.log(error));
   },
