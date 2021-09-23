@@ -12,6 +12,7 @@ HOME PAGE
 * Benefits
 * Categories
 * About section
+* Testimonial
 -------------------------------------------------------------------*/
 
 /* --- GENERAL --- */
@@ -549,7 +550,7 @@ ol {
 /* --- Carousel --- */
 .carousel-item {
 	height: 550px;
-	display: flex;
+	// display: flex;
 	align-items: center;
 
 	.bg-img {
@@ -775,5 +776,83 @@ ol {
 
 	@media only screen and (max-width: 479px) {
 		padding: 30px 30px 50px 30px;
+	}
+}
+
+/* --- Testimonial --- */
+.testimonial {
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	background: #f7f5fa;
+	padding-bottom: 50px;
+	padding-top: 50px;
+
+	&:before {
+		position: absolute;
+		left: -440px;
+		top: 0;
+		height: 842px;
+		width: 802px;
+		background-image: url('~@/assets/img/testimonial/left-bg.png');
+		content: "";
+		z-index: -1;
+	}
+
+	@media (min-width: 992px) {
+		&:after {
+			position: absolute;
+			right: -210px;
+			bottom: -48px;
+			height: 688px;
+			width: 697px;
+			background-image: url('~@/assets/img/testimonial/right-bg.png');
+			content: "";
+			z-index: -1;
+		}
+	}
+
+	.carousel-item {
+		height: 470px;
+
+		@media (min-width: 576px) {
+			height: 350px;
+		}
+
+		@media (min-width: 768px) {
+			height: 280px;
+		}
+
+		@media (min-width: 992px) {
+			height: 330px;
+		}
+
+		@media (min-width: 1400px) {
+			height: 280px;
+		}
+	}
+
+	img {
+		display: inline-block;
+		width: auto;
+	}
+
+	.testimonial__text {
+		text-align: center;
+
+		p {
+			font-size: 23px;
+			font-style: italic;
+			line-height: 1.8;
+			font-family: "Libre Baskerville", serif;
+			margin-top: 38px;
+			margin-bottom: 30px;
+		}
+
+		h4 {
+			color: #111111;
+			font-size: 20px;
+			margin-bottom: 8px;
+		}
 	}
 }
