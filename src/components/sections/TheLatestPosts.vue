@@ -84,7 +84,7 @@ export default {
   created: function () {
     axios
       .get(
-        "https://api.jsonstorage.net/v1/json/f0e442b2-aa85-499d-903a-36f43954c027"
+        `${process.env.VUE_APP_ROOT_API}/f0e442b2-aa85-499d-903a-36f43954c027`
       )
       .then((response) => (this.latestPostsItems = response.data))
       .catch((error) => console.log(error));
