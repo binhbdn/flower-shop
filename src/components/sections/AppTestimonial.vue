@@ -74,11 +74,11 @@ export default {
     };
   },
   created: function () {
+    // API endpoint name: testimonial-items
     axios
       .get(
         `${process.env.VUE_APP_ROOT_API}/ba79d80e-fd4e-4084-a851-2eaa13e0e68a`
       )
-
       .then((response) => (this.testimonialItems = response.data))
       .catch((error) => console.log(error));
   },
