@@ -12,6 +12,7 @@ HOME PAGE
 * Benefits
 * Categories
 * About section
+* Custom Flower Section
 * Latest Posts Section
 * Testimonial
 -------------------------------------------------------------------*/
@@ -787,6 +788,55 @@ ol {
   }
 }
 
+/* --- Custom Flower Section --- */
+.custom-flower {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-image: url('~@/assets/img/custom-flower/floom.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+
+  .custom-flower__text {
+    max-width: 500px;
+
+    span {
+      font-size: 16px;
+      color: #111111;
+      font-weight: 700;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      color: #ffffff;
+      line-height: 1.4;
+      margin-bottom: 42px;
+      font-family: "WindSong";
+      font-size: 40px;
+
+      @media (min-width: 418px) {
+        font-size: 60px;
+      }
+    }
+
+    .btn-florist {
+      margin-right: 16px;
+    }
+
+    .btn-outline-florist {
+      background-color: #ffffff;
+      margin-top: 30px;
+
+      @media (min-width: 418px) {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
 /* --- Latest Posts Section --- */
 .latest-post {
   padding-top: 100px;
@@ -871,10 +921,11 @@ ol {
   font-size: 14px;
   color: #888888;
   font-weight: 500;
+
   svg {
     display: inline-block;
-    vertical-align:text-bottom;
-    color:#f45d96;
+    vertical-align: text-bottom;
+    color: #f45d96;
     margin-right: 3px;
 
     &+svg {
