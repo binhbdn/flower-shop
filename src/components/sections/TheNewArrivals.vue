@@ -1,5 +1,27 @@
 <template>
   <section class="arrival spad">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="section-title">
+            <span>Hoa tươi</span>
+            <h2>Mới Nhập Về</h2>
+          </div>
+          <div class="filter__controls">
+            <ul>
+              <li
+                v-for="item in filterSet"
+                :key="item.id"
+                :class="{ active: selectedFilterId == item.id }"
+                @click="selectedFilterId = item.id"
+              >
+                {{ item.filterName }}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 </template>
 
