@@ -1,5 +1,5 @@
 <template>
-  <section class="latest-post">
+  <section class="latest-post" id="latest-post">
     <div class="container">
       <div class="row">
         <div class="col-lg-7 col-md-6">
