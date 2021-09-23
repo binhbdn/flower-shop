@@ -205,7 +205,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <router-link to="/tin-tuc" class="nav-link">TIN TỨC</router-link>
+              <router-link to="/blog" class="nav-link">BLOG</router-link>
             </li>
             <li class="nav-item">
               <router-link to="/lien-he" class="nav-link">LIÊN HỆ</router-link>
