@@ -4,6 +4,7 @@ GENERAL
 * Reset
 * Helper
 * Header
+* Breadcrumb
 * Instagram
 * Footer
 
@@ -159,7 +160,8 @@ ol {
 
 /* --- Header --- */
 .navbar {
-  background:#ffffff;
+  background: #ffffff;
+
   .navbar-brand {
     @media (min-width: 400px) {
       display: flex !important;
@@ -271,6 +273,44 @@ ol {
         }
       }
     }
+  }
+}
+
+/* --- Breadcrumb --- */
+.breadcrumb {
+  background-image: url('~@/assets/img/breadcrumb/breadcrumb-bg.jpg');
+  padding: 52px 0 60px;
+}
+
+.breadcrumb__text h2 {
+  font-size: 50px;
+  font-weight: 400;
+  color: #111111;
+}
+
+.breadcrumb__links {
+  a {
+    display: inline-block;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #f45d96;
+    margin-right: 28px;
+    position: relative;
+
+    &:after {
+      position: absolute;
+      right: -18px;
+      top: -1px;
+      content: "|";
+      color: #aeaeae;
+    }
+  }
+
+  span {
+    display: inline-block;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #111111;
   }
 }
 
@@ -974,11 +1014,11 @@ ol {
     left: 0;
     transition: all, 0.6s;
 
-    span{
-    font-size: 14px;
-    font-weight: 400;
-    color: #701212;
-    text-decoration: line-through;
+    span {
+      font-size: 14px;
+      font-weight: 400;
+      color: #701212;
+      text-decoration: line-through;
     }
   }
 }
