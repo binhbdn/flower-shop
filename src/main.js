@@ -56,6 +56,8 @@ new Vue({
   router,
   data: {
     isSignedIn: false,
+    selectedProductsCount: 0,
+    favoriteProductsCount: 0,
   },
   render: (h) => h(App),
 }).$mount("#app");
