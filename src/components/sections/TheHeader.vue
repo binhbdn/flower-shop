@@ -1,6 +1,6 @@
 <template>
   <header class="py-2">
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top border-bottom">
       <div class="container">
         <button
           class="navbar-toggler"
