@@ -12,6 +12,7 @@ HOME PAGE
 * Benefits
 * Categories
 * About section
+* New Arrivals Section
 * Custom Flower Section
 * Latest Posts Section
 * Testimonial
@@ -158,6 +159,7 @@ ol {
 
 /* --- Header --- */
 .navbar {
+  background:#ffffff;
   .navbar-brand {
     @media (min-width: 400px) {
       display: flex !important;
@@ -785,6 +787,199 @@ ol {
 
   @media only screen and (max-width: 479px) {
     padding: 30px 30px 50px 30px;
+  }
+}
+
+/* --- New Arrivals Section --- */
+.arrival {
+  padding-top: 0;
+
+  .section-title {
+    margin-bottom: 20px;
+  }
+}
+
+.filter__controls {
+  margin-bottom: 40px;
+
+  li {
+    font-size: 16px;
+    color: #111111;
+    display: inline-block;
+    list-style: none;
+    padding: 3px 10px 2px;
+    margin-right: 15px;
+    cursor: pointer;
+    border: 2px solid transparent;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &.active {
+      border: 2px solid #f45d96;
+    }
+  }
+}
+
+.d-col {
+  max-width: 20%;
+  width: 100%;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.product__item {
+  overflow: hidden;
+  margin-bottom: 35px;
+
+  &:hover {
+    .product__item__pic .product__item__hover {
+      bottom: 30px;
+    }
+
+    .product__item__text {
+      .price {
+        left: -500px;
+        opacity: 0;
+      }
+
+      .cart-btn {
+        bottom: 2px;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.product__item__pic {
+  background-position: center center;
+  position: relative;
+  overflow: hidden;
+  height: 344px;
+
+  .label {
+    font-size: 13px;
+    font-weight: 700;
+    color: #ffffff;
+    background: #111111;
+    display: inline-block;
+    padding: 2px 8px 1px;
+    text-transform: uppercase;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+  }
+
+  .product__item__hover {
+    position: absolute;
+    left: 0;
+    bottom: -300px;
+    width: 100%;
+    text-align: center;
+    transition: all, 0.5s;
+
+    li {
+      list-style: none;
+      display: inline-block;
+      margin-right: 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover button {
+        background: #f45d96;
+
+        span {
+          color: #ffffff;
+          transform: rotate(360deg);
+        }
+      }
+
+      button {
+        display: block;
+        height: 40px;
+        width: 40px;
+        background: #ffffff;
+        font-size: 18px;
+        color: #111111;
+        line-height: 40px;
+        text-align: center;
+        border-style: none;
+        border-radius: 50%;
+        transition: all, 0.5s;
+        box-shadow: 0px 5px 10px #333;
+
+        span {
+          position: relative;
+          transform: rotate(0);
+          transition: all, 0.3s;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+
+.product__item__text {
+  text-align: center;
+  padding-top: 24px;
+  position: relative;
+
+  button {
+    border-style: none;
+    background-color: transparent;
+
+    &.product__name {
+      padding-left: 15px;
+      padding-right: 15px;
+      border-radius: 12px;
+      margin-bottom: 8px;
+      color: #111111;
+      font-family: "Libre Baskerville", serif;
+      font-size: 18px;
+
+      &:hover {
+        background-color: #f45d96;
+        color: #ffffff;
+      }
+    }
+
+    &.cart-btn {
+      font-size: 14px;
+      color: #f45d96;
+      font-weight: 700;
+      text-transform: uppercase;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      right: 0;
+      bottom: -50px;
+      opacity: 0;
+      transition: all, 0.3s;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  .price {
+    color: #111111;
+    font-size: 16px;
+    font-weight: 700;
+    position: relative;
+    left: 0;
+    transition: all, 0.6s;
+
+    span{
+    font-size: 14px;
+    font-weight: 400;
+    color: #701212;
+    text-decoration: line-through;
+    }
   }
 }
 
