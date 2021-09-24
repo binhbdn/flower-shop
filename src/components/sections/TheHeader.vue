@@ -36,7 +36,7 @@
             <div class="position-relative">
               <BaseIconHeart size="20" />
               <span
-                v-if="favoriteProductsCount > 0"
+                v-if="this.$root.$data.favoriteProductsCount > 0"
                 class="
                   position-absolute
                   top-0
@@ -47,7 +47,7 @@
                   bg-danger
                 "
               >
-                {{ favoriteProductsCount }}
+                {{ this.$root.$data.favoriteProductsCount }}
               </span>
             </div>
           </router-link>
@@ -61,7 +61,7 @@
             <div class="position-relative">
               <BaseIconCart size="20" />
               <span
-                v-if="selectedProductsCount > 0"
+                v-if="this.$root.$data.selectedProductsCount > 0"
                 class="
                   position-absolute
                   top-0
@@ -72,7 +72,7 @@
                   bg-danger
                 "
               >
-                {{ selectedProductsCount }}
+                {{ this.$root.$data.selectedProductsCount }}
               </span>
             </div>
           </router-link>
@@ -227,18 +227,6 @@ export default {
     BaseIconSignIn,
     BaseIconSignOut,
   },
-  data: function () {
-    return {
-      selectedProductsCount: {
-        type: Number,
-        default: 0,
-      },
-      favoriteProductsCount: {
-        type: Number,
-        default: 0,
-      },
-    };
-  },
   computed: {
     isLoggedIn: {
       // getter
@@ -253,10 +241,6 @@ export default {
   },
   mounted() {
     this.isLoggedIn = this.$root.$data.isSignedIn;
-    // console.log("this.isLoggedIn = " + this.isLoggedIn);
-    // TODO: Fetch favoriteProductsCount & selectedProductsCount
-    this.favoriteProductsCount = 5;
-    this.selectedProductsCount = 3;
   },
   methods: {
     signOut: function () {
