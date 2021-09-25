@@ -1253,7 +1253,11 @@ ol {
 /* --- ABOUT PAGE --- */
 /* --- Services Section --- */
 .services {
-  padding-bottom: 70px;
+  padding-bottom: 30px;
+
+  @media only screen and (min-width: 992px) {
+    padding-bottom: 70px;
+  }
 
   .section-title {
     margin-bottom: 75px;
@@ -1263,9 +1267,22 @@ ol {
 .services__item {
   text-align: center;
   border: 1px solid #f5deef;
-  padding: 60px 75px 35px;
+  padding: 60px 10px 35px;
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 70px;
+
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    padding: 60px 40px 35px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    padding: 60px 75px 35px;
+
+  }
+
+  @media only screen and (min-width: 992px) {
+    margin-bottom: 30px;
+  }
 
   .services__item__icon {
     position: absolute;
