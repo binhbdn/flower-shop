@@ -47,10 +47,10 @@ export default {
     // API endpoint name: our-team-member
     axios
       .get(
-        `${process.env.VUE_APP_ROOT_API}/09d2281d-c0ce-4c7b-8b65-a753e95130be`
+        `${process.env.VUE_APP_ROOT_API}/614f3c399548541c29b845c3/latest`
       )
       .then((response) => {
-        this.teamMembers = response.data;
+        this.teamMembers = response.data.record;
       })
       .catch((error) => console.log(error));
   },

@@ -40,10 +40,10 @@ export default {
     // API endpoint name: services
     axios
       .get(
-        `${process.env.VUE_APP_ROOT_API}/c6bcd447-5ac8-46c4-b788-9ec82f6a782a`
+        `${process.env.VUE_APP_ROOT_API}/614f3504aa02be1d444e88c0/latest`
       )
       .then((response) => {
-        this.serviceItemsData = response.data;
+        this.serviceItemsData = response.data.record;
       })
       .catch((error) => console.log(error));
   },
