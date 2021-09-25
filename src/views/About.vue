@@ -8,6 +8,7 @@
     <AppAboutUs />
     <TheServices />
     <AppTestimonial />
+    <TheTeam />
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import AppBreadcrumb from "../components/sections/AppBreadcrumb.vue";
 import AppAboutUs from "../components/sections/AppAboutUs.vue";
 import TheServices from "../components/sections/TheServices.vue";
 import AppTestimonial from "../components/sections/AppTestimonial.vue";
+import TheTeam from "../components/sections/TheTeam.vue";
 
 export default {
   name: "About",
@@ -25,6 +27,7 @@ export default {
     AppAboutUs,
     TheServices,
     AppTestimonial,
+    TheTeam,
   },
 };
 </script>
