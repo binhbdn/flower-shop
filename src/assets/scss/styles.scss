@@ -284,6 +284,7 @@ ol {
 .breadcrumb {
   background-image: url('~@/assets/img/breadcrumb/breadcrumb-bg.jpg');
   padding: 52px 0 60px;
+  margin-top: 48px;
 }
 
 .breadcrumb__text h2 {
@@ -602,6 +603,9 @@ ol {
 
 /* --- HOME PAGE --- */
 /* --- Carousel --- */
+#myCarousel{
+  margin-top: 48px;
+}
 .carousel-item {
   height: 550px;
   // display: flex;
