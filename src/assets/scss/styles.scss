@@ -17,6 +17,9 @@ HOME PAGE
 * Custom Flower Section
 * Latest Posts Section
 * Testimonial
+
+ABOUT PAGE
+* Services Section
 -------------------------------------------------------------------*/
 
 /* --- GENERAL --- */
@@ -1244,5 +1247,43 @@ ol {
       font-size: 20px;
       margin-bottom: 8px;
     }
+  }
+}
+
+/* --- ABOUT PAGE --- */
+/* --- Services Section --- */
+.services {
+  padding-bottom: 70px;
+
+  .section-title {
+    margin-bottom: 75px;
+  }
+}
+
+.services__item {
+  text-align: center;
+  border: 1px solid #f5deef;
+  padding: 60px 75px 35px;
+  position: relative;
+  margin-bottom: 30px;
+
+  .services__item__icon {
+    position: absolute;
+    left: 0;
+    top: -35px;
+    right: 0;
+    margin: 0 auto;
+    width: 100px;
+    text-align: center;
+    background: #ffffff;
+  }
+
+  h4 {
+    color: #111111;
+    margin-bottom: 15px;
+  }
+
+  p {
+    margin-bottom: 0;
   }
 }
