@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div>
     <AppBreadcrumb>
       Giới thiệu
       <template #links><router-link to="/">Trang chủ</router-link></template>
