@@ -20,6 +20,7 @@ HOME PAGE
 
 ABOUT PAGE
 * Services Section
+* Our Team Section
 -------------------------------------------------------------------*/
 
 /* --- GENERAL --- */
@@ -1302,5 +1303,57 @@ ol {
 
   p {
     margin-bottom: 0;
+  }
+}
+
+/* --- Our Team Section --- */
+.team {
+  padding-bottom: 60px;
+}
+
+.team__btn {
+  margin-bottom: 45px;
+  text-align: left;
+
+  @media only screen and (min-width: 768px) {
+    text-align: right;
+  }
+}
+
+.team__item {
+  box-shadow: 5px 5px 10px 0 rgb(0 0 0 / 50%);
+  margin-bottom: 30px;
+}
+
+.team__item__pic img {
+  min-width: 100%;
+}
+
+.team__item__text {
+  text-align: center;
+  padding: 25px 20px 25px;
+
+  h4 {
+    color: #111111;
+  }
+
+  span {
+    color: #f45d96;
+    display: block;
+    margin-bottom: 18px;
+  }
+
+  .team__item__social a {
+    font-size: 20px;
+    color: #888888;
+    margin-right: 16px;
+
+    &:hover {
+      color: #f45d96;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
