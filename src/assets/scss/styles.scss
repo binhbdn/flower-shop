@@ -24,6 +24,7 @@ ABOUT PAGE
 
 SERVICES PAGE
 * Services Sidebar Tab
+* Services Tab Content
 -------------------------------------------------------------------*/
 
 /* --- GENERAL --- */
@@ -1370,10 +1371,8 @@ ol {
 /* --- SERVICES PAGE --- */
 /* --- Services Sidebar Tab --- */
 .services__sidebar__tab {
-  padding-top: 50px;
-
-  @media only screen and (min-width: 992px) {
-    margin-bottom: 35px;
+  @media only screen and (max-width: 991px) {
+    margin-bottom: 50px;
   }
 
   .nav {
@@ -1402,4 +1401,62 @@ ol {
       margin-bottom: 75px;
     }
   }
+}
+
+/* --- Services Tab Content --- */
+.services__tab__content {
+  padding-left: 0;
+
+  @media only screen and (min-width: 992px) {
+    padding-left: 60px;
+  }
+}
+
+.services__tab__video {
+  height: 432px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  a {
+    color: #f45d96;
+    border-radius: 50%;
+
+    &:hover {
+      color: #777777;
+      border: 2px solid #f45d96;
+    }
+  }
+}
+
+.services__tab__details__title {
+  margin-top: -87px;
+  margin-bottom: 36px;
+
+  h2 {
+    font-size: 50px;
+    color: #111111;
+    display: inline-block;
+    background: #ffffff;
+    padding-top: 10px;
+    padding-right: 25px;
+    margin-bottom: 18px;
+  }
+
+  span {
+    display: block;
+    color: #f45d96;
+    font-weight: 20;
+    font-weight: 700;
+    margin-bottom: 36px;
+  }
+}
+
+.services__tab__details__desc {
+  margin-bottom: 30px;
+}
+
+.services__tab__details__desc p {
+  margin-bottom: 30px;
 }
