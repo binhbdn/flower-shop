@@ -39,9 +39,7 @@ export default {
   created: function () {
     // API endpoint name: services
     axios
-      .get(
-        `${process.env.VUE_APP_ROOT_API}/614f3504aa02be1d444e88c0/latest`
-      )
+      .get(`${process.env.VUE_APP_ROOT_API}/614f3504aa02be1d444e88c0/latest`)
       .then((response) => {
         this.serviceItemsData = response.data.record;
       })

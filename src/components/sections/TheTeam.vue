@@ -46,9 +46,7 @@ export default {
   created: function () {
     // API endpoint name: our-team-member
     axios
-      .get(
-        `${process.env.VUE_APP_ROOT_API}/614f3c399548541c29b845c3/latest`
-      )
+      .get(`${process.env.VUE_APP_ROOT_API}/614f3c399548541c29b845c3/latest`)
       .then((response) => {
         this.teamMembers = response.data.record;
       })
