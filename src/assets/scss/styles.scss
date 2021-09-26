@@ -21,6 +21,9 @@ HOME PAGE
 ABOUT PAGE
 * Services Section
 * Our Team Section
+
+SERVICES PAGE
+* Services Sidebar Tab
 -------------------------------------------------------------------*/
 
 /* --- GENERAL --- */
@@ -603,9 +606,10 @@ ol {
 
 /* --- HOME PAGE --- */
 /* --- Carousel --- */
-#myCarousel{
+#myCarousel {
   margin-top: 48px;
 }
+
 .carousel-item {
   height: 550px;
   // display: flex;
@@ -1306,6 +1310,7 @@ ol {
   }
 
   p {
+    text-align: justify;
     margin-bottom: 0;
   }
 }
@@ -1358,6 +1363,43 @@ ol {
 
     &:last-child {
       margin-right: 0;
+    }
+  }
+}
+
+/* --- SERVICES PAGE --- */
+/* --- Services Sidebar Tab --- */
+.services__sidebar__tab {
+  padding-top: 50px;
+
+  @media only screen and (min-width: 992px) {
+    margin-bottom: 35px;
+  }
+
+  .nav {
+    display: initial;
+  }
+
+  .nav-tabs {
+    border-bottom: none;
+  }
+
+  .nav-item:last-child .nav-link .services__item {
+    margin-bottom: 0;
+  }
+
+  .nav-link {
+    border: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding: 0;
+
+    &.active .services__item {
+      border-color: #f45d96;
+    }
+
+    .services__item {
+      margin-bottom: 75px;
     }
   }
 }
