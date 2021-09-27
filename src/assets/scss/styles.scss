@@ -26,6 +26,9 @@ SERVICES PAGE
 * Services Sidebar Tab
 * Services Tab Content
 * Services Form
+
+CONTACT PAGE
+* Contact Section
 -------------------------------------------------------------------*/
 
 /* --- GENERAL --- */
@@ -1508,5 +1511,76 @@ ol {
       margin-bottom: 30px;
       resize: none;
     }
+  }
+}
+
+/* --- CONTACT PAGE --- */
+/* --- Contact Section --- */
+.contact {
+  padding-bottom: 65px;
+}
+
+.contact__widget {
+  margin-bottom: 30px;
+
+  h2 {
+    font-size: 40px;
+    margin-bottom: 24px;
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  ul li {
+    list-style: none;
+
+    a {
+      color: #444444;
+      font-size: 15px;
+      line-height: 40px;
+
+      svg {
+        color: #f45d96;
+      }
+
+      &:hover {
+        color: #f45d96;
+      }
+    }
+  }
+}
+
+.contact__form {
+  margin-bottom: 30px;
+
+  h2 {
+    font-size: 40px;
+    margin-bottom: 35px;
+  }
+
+  form {
+    input {
+      height: 46px;
+      width: 100%;
+      margin-bottom: 25px;
+    }
+
+    textarea {
+      height: 100px;
+      width: 100%;
+      margin-bottom: 20px;
+      padding-top: 12px;
+      resize: none;
+    }
+  }
+}
+
+.contact__map {
+  height: 310px;
+  margin-bottom: 30px;
+
+  iframe {
+    width: 100%;
   }
 }
