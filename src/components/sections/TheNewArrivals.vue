@@ -35,7 +35,7 @@
                 }"
                 class="product__item__pic set-bg"
               >
-                <div v-if="item.label != ''" class="label">
+                <div v-if="item.label" class="label">
                   {{ item.label }}
                 </div>
                 <ul class="product__item__hover">
@@ -66,6 +66,11 @@
                           ? 'Hết số lượng để thêm vào giỏ'
                           : 'Thêm vào giỏ hàng'
                       "
+                      :class="{
+                        disabled:
+                          item.quantity == 0 ||
+                          item.quantityInCart == item.quantity,
+                      }"
                       @click="addToCard(item)"
                     >
                       <span>

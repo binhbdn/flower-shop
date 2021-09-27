@@ -937,7 +937,7 @@ ol {
         margin-right: 0;
       }
 
-      &:hover button {
+      &:hover button:not(.disabled) {
         background: #f45d96;
 
         span {
@@ -959,6 +959,10 @@ ol {
         border-radius: 50%;
         transition: all, 0.5s;
         box-shadow: 0px 5px 10px #333;
+
+        &.disabled {
+          background: #6c757d;
+        }
 
         span {
           position: relative;
