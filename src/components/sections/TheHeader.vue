@@ -170,6 +170,11 @@
                 class="dropdown-menu dropdown-menu-dark"
                 aria-labelledby="dropdown01"
               >
+                <li class="d-block d-lg-none">
+                  <router-link to="/san-pham" class="dropdown-item"
+                    >Tất cả sản phẩm</router-link
+                  >
+                </li>
                 <li>
                   <router-link to="/san-pham/dat-hang" class="dropdown-item"
                     >Đặt hàng sản phẩm</router-link
