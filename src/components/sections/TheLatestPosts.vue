@@ -82,6 +82,7 @@ export default {
     };
   },
   created: function () {
+    // API endpoint name: latest-posts-items
     axios
       .get(
         `${process.env.VUE_APP_ROOT_API}/f0e442b2-aa85-499d-903a-36f43954c027`
