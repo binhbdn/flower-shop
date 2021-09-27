@@ -35,7 +35,7 @@
                 }"
                 class="product__item__pic set-bg"
               >
-                <div v-if="item.label != ''" class="label">
+                <div v-if="item.label" class="label">
                   {{ item.label }}
                 </div>
                 <ul class="product__item__hover">
