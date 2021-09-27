@@ -174,7 +174,7 @@ ol {
 .navbar {
   background: #ffffff;
 
-   .dropdown {
+  .dropdown {
     @media all and (min-width: 992px) {
       .dropdown-menu {
         display: none;
@@ -892,11 +892,27 @@ ol {
 }
 
 .d-col {
-  max-width: 20%;
   width: 100%;
   float: left;
   padding-left: 15px;
   padding-right: 15px;
+  max-width: 100%;
+
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    max-width: 50%;
+  }
+
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    max-width: 33.33%;
+  }
+
+  @media only screen and (min-width: 1200px) and (max-width: 1449px) {
+    max-width: 25%;
+  }
+
+  @media only screen and (min-width: 1500px) {
+    max-width: 20%;
+  }
 }
 
 .product__item {
