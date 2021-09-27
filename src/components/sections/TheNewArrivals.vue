@@ -66,6 +66,11 @@
                           ? 'Hết số lượng để thêm vào giỏ'
                           : 'Thêm vào giỏ hàng'
                       "
+                      :class="{
+                        disabled:
+                          item.quantity == 0 ||
+                          item.quantityInCart == item.quantity,
+                      }"
                       @click="addToCard(item)"
                     >
                       <span>
