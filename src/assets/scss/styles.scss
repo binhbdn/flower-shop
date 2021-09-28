@@ -4,6 +4,7 @@ GENERAL
 * Reset
 * Helper
 * Header
+* Breadcrumb
 * Instagram
 * Footer
 
@@ -16,6 +17,10 @@ HOME PAGE
 * Custom Flower Section
 * Latest Posts Section
 * Testimonial
+
+ABOUT PAGE
+* Services Section
+* Our Team Section
 -------------------------------------------------------------------*/
 
 /* --- GENERAL --- */
@@ -159,7 +164,8 @@ ol {
 
 /* --- Header --- */
 .navbar {
-  background:#ffffff;
+  background: #ffffff;
+
   .navbar-brand {
     @media (min-width: 400px) {
       display: flex !important;
@@ -271,6 +277,45 @@ ol {
         }
       }
     }
+  }
+}
+
+/* --- Breadcrumb --- */
+.breadcrumb {
+  background-image: url('~@/assets/img/breadcrumb/breadcrumb-bg.jpg');
+  padding: 52px 0 60px;
+  margin-top: 48px;
+}
+
+.breadcrumb__text h2 {
+  font-size: 50px;
+  font-weight: 400;
+  color: #111111;
+}
+
+.breadcrumb__links {
+  a {
+    display: inline-block;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #f45d96;
+    margin-right: 28px;
+    position: relative;
+
+    &:after {
+      position: absolute;
+      right: -18px;
+      top: -1px;
+      content: "|";
+      color: #aeaeae;
+    }
+  }
+
+  span {
+    display: inline-block;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #111111;
   }
 }
 
@@ -558,6 +603,9 @@ ol {
 
 /* --- HOME PAGE --- */
 /* --- Carousel --- */
+#myCarousel{
+  margin-top: 48px;
+}
 .carousel-item {
   height: 550px;
   // display: flex;
@@ -978,11 +1026,11 @@ ol {
     left: 0;
     transition: all, 0.6s;
 
-    span{
-    font-size: 14px;
-    font-weight: 400;
-    color: #701212;
-    text-decoration: line-through;
+    span {
+      font-size: 14px;
+      font-weight: 400;
+      color: #701212;
+      text-decoration: line-through;
     }
   }
 }
@@ -1207,6 +1255,113 @@ ol {
       color: #111111;
       font-size: 20px;
       margin-bottom: 8px;
+    }
+  }
+}
+
+/* --- ABOUT PAGE --- */
+/* --- Services Section --- */
+.services {
+  padding-bottom: 30px;
+
+  @media only screen and (min-width: 992px) {
+    padding-bottom: 70px;
+  }
+
+  .section-title {
+    margin-bottom: 75px;
+  }
+}
+
+.services__item {
+  text-align: center;
+  border: 1px solid #f5deef;
+  padding: 60px 10px 35px;
+  position: relative;
+  margin-bottom: 70px;
+
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    padding: 60px 40px 35px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    padding: 60px 75px 35px;
+
+  }
+
+  @media only screen and (min-width: 992px) {
+    margin-bottom: 30px;
+  }
+
+  .services__item__icon {
+    position: absolute;
+    left: 0;
+    top: -35px;
+    right: 0;
+    margin: 0 auto;
+    width: 100px;
+    text-align: center;
+    background: #ffffff;
+  }
+
+  h4 {
+    color: #111111;
+    margin-bottom: 15px;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+/* --- Our Team Section --- */
+.team {
+  padding-bottom: 60px;
+}
+
+.team__btn {
+  margin-bottom: 45px;
+  text-align: left;
+
+  @media only screen and (min-width: 768px) {
+    text-align: right;
+  }
+}
+
+.team__item {
+  box-shadow: 5px 5px 10px 0 rgb(0 0 0 / 50%);
+  margin-bottom: 30px;
+}
+
+.team__item__pic img {
+  min-width: 100%;
+}
+
+.team__item__text {
+  text-align: center;
+  padding: 25px 20px 25px;
+
+  h4 {
+    color: #111111;
+  }
+
+  span {
+    color: #f45d96;
+    display: block;
+    margin-bottom: 18px;
+  }
+
+  .team__item__social a {
+    font-size: 20px;
+    color: #888888;
+    margin-right: 16px;
+
+    &:hover {
+      color: #f45d96;
+    }
+
+    &:last-child {
+      margin-right: 0;
     }
   }
 }

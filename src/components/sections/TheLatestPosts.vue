@@ -85,9 +85,9 @@ export default {
     // API endpoint name: latest-posts-items
     axios
       .get(
-        `${process.env.VUE_APP_ROOT_API}/f0e442b2-aa85-499d-903a-36f43954c027`
+        `${process.env.VUE_APP_ROOT_API}/614f4bd89548541c29b84aee/latest`
       )
-      .then((response) => (this.latestPostsItems = response.data))
+      .then((response) => (this.latestPostsItems = response.data.record))
       .catch((error) => console.log(error));
   },
 };

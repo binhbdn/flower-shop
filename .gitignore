@@ -1,7 +1,8 @@
 .DS_Store
 node_modules
+# outputDir
 /dist
-
+/docs
 
 # local env files
 .env.local
