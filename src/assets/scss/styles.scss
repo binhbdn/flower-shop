@@ -29,6 +29,9 @@ SERVICES PAGE
 
 CONTACT PAGE
 * Contact Section
+
+PRODUCTS PAGE
+* Products Section
 -------------------------------------------------------------------*/
 
 /* --- GENERAL --- */
@@ -1615,5 +1618,60 @@ ol {
 
   iframe {
     width: 100%;
+  }
+}
+
+/* --- PRODUCTS PAGE --- */
+/* --- Products Section --- */
+.product {
+  padding-top: 20px;
+  padding-bottom: 100px;
+}
+
+.product__widget {
+  margin-bottom: 20px;
+
+  .form-check-input {
+
+    &:checked,
+    &:indeterminate {
+      background-color: #f45d96;
+      border-color: #f45d96;
+    }
+  }
+}
+
+.product__widget__text {
+  i {
+    display: inline-block;
+    height: 37px;
+    width: 37px;
+    background: #f2f2f2;
+    font-size: 16px;
+    color: #111111;
+    line-height: 37px;
+    text-align: center;
+    margin-right: 20px;
+  }
+
+  p {
+    margin-bottom: 0;
+    color: #111111;
+    display: inline-block;
+  }
+}
+
+.product__widget__filter {
+  @media only screen and (max-width: 767px) {
+    margin-top: 20px;
+  }
+
+  select {
+    float: none;
+    width: 260px;
+
+    @media only screen and (min-width: 768px) {
+      float: right;
+    }
   }
 }
