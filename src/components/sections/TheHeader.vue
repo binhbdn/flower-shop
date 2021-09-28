@@ -156,6 +156,9 @@
             </li>
             <li class="nav-item dropdown">
               <span
+                :class="{
+                  'router-link-exact-active': $route.path == '/san-pham',
+                }"
                 class="nav-link dropdown-toggle"
                 id="dropdown01"
                 data-bs-toggle="dropdown"
