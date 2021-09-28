@@ -202,9 +202,7 @@ export default {
   created: function () {
     // API endpoint name: new-arrivals-data
     axios
-      .get(
-        `${process.env.VUE_APP_ROOT_API}/614f3e1aaa02be1d444e8bd9/latest`
-      )
+      .get(`${process.env.VUE_APP_ROOT_API}/614f3e1aaa02be1d444e8bd9/latest`)
       .then((response) => {
         this.filterSet = response.data.record.filterSet;
         this.newArrivalsItems = response.data.record.newArrivalsItems;
