@@ -37,6 +37,11 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "contact" */ "../views/Products.vue"),
   },
+  {
+    path: "/san-pham/gio-hang",
+    name: "Cart",
+    component: () => import(/* webpackChunkName: "cart" */ "../views/Cart.vue"),
+  },
 ];
 
 const router = new VueRouter({
