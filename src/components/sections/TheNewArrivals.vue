@@ -200,14 +200,22 @@ export default {
     };
   },
   created: function () {
-    // API endpoint name: new-arrivals-data
-    axios
-      .get(`${process.env.VUE_APP_ROOT_API}/614f3e1aaa02be1d444e8bd9/latest`)
-      .then((response) => {
-        this.filterSet = response.data.record.filterSet;
-        this.newArrivalsItems = response.data.record.newArrivalsItems;
-      })
-      .catch((error) => console.log(error));
+    if (this.$root.$data.allProducts.newProductItems == null) {
+      // API endpoint name: new-arrivals-data
+      axios
+        .get(`${process.env.VUE_APP_ROOT_API}/614f3e1aaa02be1d444e8bd9/latest`)
+        .then((response) => {
+          this.$root.$data.allProducts.newProductItems =
+            response.data.record.newArrivalsItems;
+          this.$root.$data.filterSet = response.data.record.filterSet;
+          this.newArrivalsItems = this.$root.$data.allProducts.newProductItems;
+          this.filterSet = this.$root.$data.filterSet;
+        })
+        .catch((error) => console.log(error));
+    } else {
+      this.newArrivalsItems = this.$root.$data.allProducts.newProductItems;
+      this.filterSet = this.$root.$data.filterSet;
+    }
   },
   methods: {
     getFilterNameById: function (id) {

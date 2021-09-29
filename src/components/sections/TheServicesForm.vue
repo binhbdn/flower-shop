@@ -13,9 +13,9 @@
           <input type="email" class="form-control" placeholder="Email" />
         </div>
         <div class="col-md-6 col-lg-6">
-          <select class="form-control">
-            <option selected>Chọn loại dịch vụ…</option>
-            <option value="1">Hoa theo yêu cầu</option>
+          <select class="form-select">
+            <option disabled>Chọn loại dịch vụ…</option>
+            <option value="1" selected>Hoa theo yêu cầu</option>
             <option value="2">Hoa cho sự kiện</option>
             <option value="3">Chăm sóc cảnh quan</option>
           </select>

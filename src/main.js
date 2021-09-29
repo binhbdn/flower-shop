@@ -58,6 +58,11 @@ new Vue({
     isSignedIn: false,
     selectedProductsCount: 0,
     favoriteProductsCount: 0,
+    filterSet: null,
+    allProducts: {
+      newProductItems: null,
+      oldProductItems: null,
+    },
   },
   render: (h) => h(App),
 }).$mount("#app");

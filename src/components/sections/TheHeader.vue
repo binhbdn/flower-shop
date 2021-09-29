@@ -155,20 +155,29 @@
               <router-link to="/dich-vu" class="nav-link">DỊCH VỤ</router-link>
             </li>
             <li class="nav-item dropdown">
-              <router-link
-                to="/san-pham"
+              <span
+                :class="{
+                  'router-link-exact-active': $route.path == '/san-pham',
+                }"
                 class="nav-link dropdown-toggle"
                 id="dropdown01"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
+                role="button"
+                @click="showAllProducts"
               >
                 SẢN PHẨM
-              </router-link>
+              </span>
 
               <ul
                 class="dropdown-menu dropdown-menu-dark"
                 aria-labelledby="dropdown01"
               >
+                <li class="d-block d-lg-none">
+                  <router-link to="/san-pham" class="dropdown-item"
+                    >Tất cả sản phẩm</router-link
+                  >
+                </li>
                 <li>
                   <router-link to="/san-pham/dat-hang" class="dropdown-item"
                     >Đặt hàng sản phẩm</router-link
@@ -245,6 +254,11 @@ export default {
   methods: {
     signOut: function () {
       this.isLoggedIn = false;
+    },
+    showAllProducts: function () {
+      if (window.innerWidth > 992) {
+        this.$router.push("/san-pham");
+      }
     },
   },
 };
