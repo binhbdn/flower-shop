@@ -18,7 +18,7 @@ import ShoppingCart from "../components/sections/TheShoppingCart.vue";
 
 export default {
   name: "Cart",
-  pageTitle: "Florist | Liên hệ",
+  pageTitle: "Florist | Giỏ hàng",
   components: {
     AppBreadcrumb,
     ShoppingCart,
