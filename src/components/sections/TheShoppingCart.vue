@@ -153,7 +153,9 @@
                 <span>VNĐ {{ payment }}</span>
               </li>
             </ul>
-            <a href="#">THANH TOÁN</a>
+            <span @click="checkPayment" class="pay" role="button"
+              >THANH TOÁN</span
+            >
           </div>
         </div>
       </div>
@@ -260,6 +262,17 @@ export default {
           .catch((error) => console.log(error));
       } else {
         alert("Mã giảm giá không hợp lệ");
+      }
+    },
+
+    checkPayment: function () {
+      if (!this.$root.$data.isSignedIn) {
+        alert("Quy khách cần đăng nhập để tiến hành thanh toán");
+        this.$router.push("/dang-nhap");
+      } else {
+        alert(
+          "Xin lỗi quý khách, chức năng thanh toán đang trong quá trình bảo trì"
+        );
       }
     },
   },
