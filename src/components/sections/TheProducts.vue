@@ -155,7 +155,7 @@
                   </span>
                 </button>
                 <div class="price">
-                  {{ item.price }}đ
+                  VNĐ {{ item.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") }}
                   <span v-if="item.oldPrice > 0">{{ item.oldPrice }}đ</span>
                 </div>
                 <button
