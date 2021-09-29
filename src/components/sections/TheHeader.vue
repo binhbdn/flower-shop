@@ -117,13 +117,13 @@
                 </router-link>
               </li>
               <li class="nav-item">
-                <router-link
-                  to="/dang-xuat"
+                <span
+                  @click="isLoggedIn = false"
                   :class="{ disabled: !isLoggedIn }"
                   class="dropdown-item"
                 >
                   Đăng xuất
-                </router-link>
+                </span>
               </li>
               <li><hr class="dropdown-divider" /></li>
               <li class="nav-item">
