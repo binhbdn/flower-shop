@@ -155,7 +155,10 @@
                   </span>
                 </button>
                 <div class="price">
-                  {{ item.price }}đ
+                  VNĐ
+                  {{
+                    item.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")
+                  }}
                   <span v-if="item.oldPrice > 0">{{ item.oldPrice }}đ</span>
                 </div>
                 <button
@@ -314,8 +317,12 @@ export default {
 
     addToCard: function (item) {
       if (item.quantityInCart < item.quantity) {
+        if (item.quantityInCart == -1) {
+          item.quantityInCart = 0;
+        }
         item.quantityInCart++;
         this.$root.$data.selectedProductsCount++;
+        this.$root.$data.priceTotal += item.price;
       }
     },
 

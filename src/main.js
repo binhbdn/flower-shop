@@ -58,6 +58,7 @@ new Vue({
     isSignedIn: false,
     selectedProductsCount: 0,
     favoriteProductsCount: 0,
+    priceTotal: 0,
     filterSet: null,
     allProducts: {
       newProductItems: null,
