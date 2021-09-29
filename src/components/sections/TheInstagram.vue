@@ -10,7 +10,9 @@
               class="instagram__post__item set-bg"
               :style="{
                 'background-image':
-                  'url(/img/instagram/insta-' + index + '.jpg)',
+                  'url(https://binhbdn.github.io/flower-shop/img/instagram/insta-' +
+                  index +
+                  '.jpg)',
               }"
             >
               <div class="instagram__post__item__hover">
